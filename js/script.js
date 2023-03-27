@@ -6,8 +6,8 @@ function init(){
   button.addEventListener('click', function(){
   	alert("Anh Dang: " + entryinput.value);
   	textoutput.innerHTML = entryinput.value;
-  });
- };
+  }
+ }
 
 
 
