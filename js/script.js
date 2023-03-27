@@ -1,11 +1,13 @@
 function init(){
-  var entryinput = document.getElementById('entryinput');
   var button = document.getElementById('entrybutton');
-  var textoutput = document.getElementById('textoutput');
-  button.addEventListener('click', function(){
-  	alert("Anh Dang: " + entryinput.value);
-  	textoutput.innerHTML = entryinput.value;
+  
+  function showMeText(){
+    var textbox = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = entryinput.value;
+    alert("Anh Dang: " + textbox.value);
   }
- }
+
+  button.addEventListener('click', showMeText());
+  }
 
 window.addEventListener('load', init);
