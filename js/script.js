@@ -1,9 +1,11 @@
 function init(){
 //add your javascrip between these two lines of code
-  var content = document.getElementById('entryinput');
+  var entryinput = document.getElementById('entryinput');
   var button = document.getElementById('entrybutton');
+  var textoutput = document.getElementById('textoutput');
   button.addEventListener('click', function(){
-  	alert("Anh Dang: " + content.value);
+  	alert("Anh Dang: " + entryinput.value);
+  	textoutput.innerHTML = entryinput.value;
   });
  };
 
